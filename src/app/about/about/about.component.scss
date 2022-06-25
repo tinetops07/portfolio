@@ -1,0 +1,50 @@
+.about {
+    &-container {
+        display: flex;
+    }
+
+    &-image {
+        position: relative;
+        top: 24px;
+        left: 24px;
+        width: 25%;
+
+        &-content {
+            height: 380px
+        }
+    }
+
+    &-description {
+        width: 75%;
+        margin: 40px 40px 0px 0px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &-content {
+            font-size: 22px;
+            line-height: 40px;
+            letter-spacing: 3px;
+        }
+    }
+
+    &-button {
+        margin: auto auto;
+
+        &-content {
+            border-radius: 20px;
+            height: 40px;
+            width: 200px;
+            background-color: beige;
+            font-family: Times;
+            letter-spacing: 3px;
+            margin: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #DFBB9D;
+            }
+        }
+    }
+}

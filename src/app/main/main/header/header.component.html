@@ -5,11 +5,11 @@
             <img src="../../../../assets/images/heartbg.png" alt="">
         </div>
     </div>
-    <div class="header-searchbar">
+    <!-- <div class="header-searchbar">
         <div class="header-searchbar-content">
             <input class="header-searchbar-content-item" type="text" placeholder="Search..">
         </div>
-    </div>
+    </div> -->
     <div class="header-content">
         <ng-container *ngFor="let item of header">
             <div class="header-content-items" [class.header-content-items-selected]="item.isSelected" (click)="changeTitle(item.title)">{{item.title}}</div>

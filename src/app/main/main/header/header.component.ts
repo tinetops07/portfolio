@@ -9,8 +9,11 @@ import { ImainService } from '../services/imain.service';
 export class HeaderComponent implements OnInit {
 
   @Input() header = [{
+    id: '',
     title: '',
-    isSelected: false
+    subtitle:'',
+    isSelected: false,
+    text: ''
   }];
   constructor(public iService: ImainService) { }
 
@@ -18,11 +21,14 @@ export class HeaderComponent implements OnInit {
   }
 
   changeTitle(title: string) {
-    this.iService.title = title;
     this.header.forEach(header => {
-      if (header.title === title)
+      if (header.title === title) {
         header.isSelected = true;
-      else 
+        this.iService.selected.title = header.text;
+        this.iService.selected.id = header.id;
+        this.iService.selected.subtitle = header.subtitle;
+      }
+      else
         header.isSelected = false
     })
   }

@@ -1,4 +1,6 @@
 <div class="body-container">
-    <div class="body-title"> {{iService.title}} </div>
-    <app-contact *ngIf="iService.title==='Contact'"></app-contact>
+    <div class="body-title"> {{iService.selected.title}} </div>
+    <div class="body-subtitle"> {{iService.selected.subtitle}} </div>
+    <app-contact *ngIf="iService.selected.id==='contact'"></app-contact>
+    <app-about *ngIf="iService.selected.id==='about'"></app-about>
 </div>

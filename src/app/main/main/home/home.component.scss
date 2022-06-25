@@ -8,10 +8,12 @@
 
     &-header {
         margin-left: 30px;
+        // font-family: Sweet Sans !important;
         font-family: cursive;
-        // color: #DFBB9D;
+        letter-spacing: 3px;
     }
-    &-body{
+
+    &-body {
         margin-top: 20px;
     }
 }
